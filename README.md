@@ -22,19 +22,12 @@ A simple and intuitive habit tracking application built using **TypeScript**, **
 -Add your habits by specifying their names and frequency.
 -Mark habits as completed for the current day.
 
-![image](https://github.com/user-attachments/assets/65223069-5f57-4ddd-b392-1b75e32b5ac2)
+![image](https://github.com/user-attachments/assets/1815fd36-2cb7-456d-ad11-9be6c5244f80)
 
 -View your progress, streak, and completion status in the dashboard.
 -Remove habits as needed.
 
-## Folder Structure
 
-src/
-├── components/
-│   └── HabitList.tsx        # Main component to display and manage habits
-├── store/
-│   └── store.ts             # Zustand store for state management
-├── styles/
-│   └── theme.ts             # Material UI theme (optional)
-└── App.tsx                  # Main application entry point
+## Explore Project
 
+![Live Project](https://dailystreak.abhikhokhar.live)
