@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Daily Streak
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and intuitive habit tracking application built using **TypeScript**, **Zustand**, and **Material UI**. This application helps you monitor your habits, maintain streaks, and stay consistent with your goals.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add and Remove Habits**: Seamlessly add or delete habits.
+- **Track Completion**: Mark habits as done for the current day.
+- **Streak Monitoring**: Automatically calculates and displays your current streak.
+- **Progress Visualization**: View your progress through a visual bar chart.
+- **Persistent Data**: Data is stored locally using `localStorage`.
+- **Responsive Design**: Built with Material UI for a modern and responsive interface.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **TypeScript**: For type safety and scalability.
+- **Zustand**: A lightweight state management library for managing application state.
+- **Material UI**: A popular React UI framework for responsive and accessible design.
 
-- Configure the top-level `parserOptions` property like this:
+## How it Works
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-Add your habits by specifying their names and frequency.
+-Mark habits as completed for the current day.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![image](https://github.com/user-attachments/assets/65223069-5f57-4ddd-b392-1b75e32b5ac2)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+-View your progress, streak, and completion status in the dashboard.
+-Remove habits as needed.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Folder Structure
+
+src/
+├── components/
+│   └── HabitList.tsx        # Main component to display and manage habits
+├── store/
+│   └── store.ts             # Zustand store for state management
+├── styles/
+│   └── theme.ts             # Material UI theme (optional)
+└── App.tsx                  # Main application entry point
+
