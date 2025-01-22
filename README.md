@@ -30,4 +30,4 @@ A simple and intuitive habit tracking application built using **TypeScript**, **
 
 ## Explore Project
 
-![Live Project](https://dailystreak.abhikhokhar.live)
+[Live Project](https://dailystreak.abhikhokhar.live)
