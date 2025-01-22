@@ -20,7 +20,7 @@ function App() {
               fontWeight: "bold", 
             }}
           >
-            Dialy Streak
+            Daily Streak
           </Typography>
 
           <AddHabitForm />
